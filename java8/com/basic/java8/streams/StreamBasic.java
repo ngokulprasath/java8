@@ -1,7 +1,6 @@
 package com.basic.java8.streams;
 
 import java.util.Arrays;
-import java.util.Arrays;
 import java.util.List;
 
 public class StreamBasic {
@@ -18,7 +17,9 @@ public class StreamBasic {
 
        System.out.println("Intermediate operation : Map \n It is used to perform some action on the collection. OutputSize==OriginalListSize");
 
-       System.out.println(" To double the numbers in the collection. "+ numbers.stream().map(i->i*2).forEach(System.out::println));
+       System.out.println(" To double the numbers in the collection. ");
+      
+       numbers.stream().map(i->i*2).forEach(System.out::println);
 
        System.out.println("To count the number of elements in the collection ");
 
